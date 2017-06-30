@@ -15,8 +15,7 @@ import UIKit
  */
 open class RangeCircularSlider: CircularSlider {
 
-    @IBInspectable
-    @objc open enum SelectedThumb {
+    @objc public enum SelectedThumb: Int {
         case startThumb
         case endThumb
         case none
