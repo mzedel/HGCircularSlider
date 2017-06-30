@@ -15,7 +15,8 @@ import UIKit
  */
 open class RangeCircularSlider: CircularSlider {
 
-    public enum SelectedThumb {
+    @IBInspectable
+    open enum SelectedThumb {
         case startThumb
         case endThumb
         case none
@@ -184,7 +185,8 @@ open class RangeCircularSlider: CircularSlider {
      * The last touched thumb
      * By default the value is none
      */
-    public var selectedThumb: SelectedThumb = .none
+    @IBInspectable
+    open var selectedThumb: SelectedThumb = .none
     
     /**
      Checks if the touched point affect the thumb
